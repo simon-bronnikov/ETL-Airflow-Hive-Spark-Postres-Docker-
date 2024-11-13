@@ -1,4 +1,4 @@
-# ETL-Airflow-Hive-Spark-Postres-Docker-
+# ETL-Airflow-Hive-Spark-Postres-Docker
 
 # Проект ETL
 
