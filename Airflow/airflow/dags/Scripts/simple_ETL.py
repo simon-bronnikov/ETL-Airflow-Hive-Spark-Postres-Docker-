@@ -27,8 +27,7 @@ def read_table_pg(spark: SparkSession, name: str):
         .option("url", Postgres.url)\
         .option("user", Postgres.user)\
         .option("password", Postgres.password)\
-        .option("dbtable", name)\
-        .load()
+        .option("dbtable", name)
 
 tables_to_read = ['customers', 'products', 'events', 'transactions']
 
