@@ -32,7 +32,7 @@ def read_table_pg(spark: SparkSession, name: str):
 tables_to_read = ['customers', 'products', 'events', 'transactions']
 
 for table in tables_to_read:
-    read_table_pg(spark, table).createOrReplaceTempView(table)
+    read_table_pg(spark, table)
     
 
 customers = spark.table("customers")
