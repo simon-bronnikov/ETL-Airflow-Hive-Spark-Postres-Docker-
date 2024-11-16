@@ -1,1 +1,23 @@
-# ETL_ML_Spark_Hive_Postgres_Airflow_Docker
+# ETL-Airflow-Hive-Spark-Postres-Docker
+
+# Проект ETL
+
+Проект реализует процесс ETL. Извлечение данных из Postgres > трансформация с Apache Spark и создание витрины >  загрузка витрины в Hive.
+
+### Код ETL процесса находится в папке **dags/**
+   
+## Технологии
+
+Использовались Docker образы для:
+- **Airflow**
+- **Hive**
+- **Hadoop**
+  
+Postgres сервер запущен локально.
+
+## Краткое описание ETL процесса
+
+Оркестрация процесса с помощью **Airflow**:
+1. Извлечение данных из Postgres в **Spark DataFrame**.
+2. Трансформация с Apache Spark и создание витрины.
+3. Загрузка витрины в **Postgres**.
