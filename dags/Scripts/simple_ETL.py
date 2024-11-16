@@ -4,7 +4,7 @@ from pyspark.sql.functions import *
 from pyspark.sql import Window
 
 spark = SparkSession.builder\
-    .config("spark.jars", "/Users/workspace/Desktop/DE/my_venv/bin/postgresql-42.7.4 20.13.35.jar")\
+    .config("spark.jars", "./postgresql-42.7.4 20.13.35.jar")\
     .config("spark.sql.warehouse.dir", "hdfs://localhost:9010/user/hive/warehouse")\
     .config("spark.hadoop.hive.metastore.uris", "thrift://hive-metastore:9083")\
     .master("local[*]")\
