@@ -23,7 +23,7 @@ with DAG(
 ) as dag:
     spark_sumbit_task = SparkSubmitOperator(
         task_id = 'spark_submit_task',
-        application = './.venv/ML_ETL_project/dags/Scripts/simple_ETL.py',
+        application = './dags/Scripts/simple_ETL.py',
         conn_id = 'spark_default', 
         conf = {"spark.master": "spark://spark-master:7077"}
     )
